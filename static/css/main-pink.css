@@ -9834,7 +9834,7 @@ iframe.uk-cover {
   background-color: rgba(25, 25, 25, 0.8);
   height: 100px;
   display: none;
-  z-index: 1; }
+  z-index: 900; }
   #fixed-header .heading-logo-link:hover > .heading-logo {
     color: rgba(255, 255, 255, 0.8); }
   #fixed-header .heading-logo {
