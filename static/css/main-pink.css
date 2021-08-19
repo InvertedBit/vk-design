@@ -9833,7 +9833,8 @@ iframe.uk-cover {
 #fixed-header {
   background-color: rgba(25, 25, 25, 0.8);
   height: 100px;
-  display: none; }
+  display: none;
+  z-index: 1; }
   #fixed-header .heading-logo-link:hover > .heading-logo {
     color: rgba(255, 255, 255, 0.8); }
   #fixed-header .heading-logo {
@@ -9885,3 +9886,10 @@ iframe.uk-cover {
 
 .page-gallery .header-section.header-background {
   height: 40vh; }
+
+.page-gallery .uk-card {
+  z-index: 100; }
+  .page-gallery .uk-card .uk-card-header {
+    margin-bottom: 0; }
+  .page-gallery .uk-card img {
+    width: 100%; }
