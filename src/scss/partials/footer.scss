@@ -1,0 +1,9 @@
+.footer-grid {
+    text-align: center;
+    & a.footer-link {
+        color: $colourtheme-1;
+        &:hover, &:active {
+            color: $colourtheme-2;
+        }
+    }
+}

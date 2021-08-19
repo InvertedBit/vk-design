@@ -1,0 +1,47 @@
+{
+    "packages": [
+        {
+            "name": "uikit/uikit",
+            "version": "v3.7.1",
+            "version_normalized": "3.7.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/uikit/uikit.git",
+                "reference": "09cbea8d5e243abc8975199dd3c7da34d1074d0d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/uikit/uikit/zipball/09cbea8d5e243abc8975199dd3c7da34d1074d0d",
+                "reference": "09cbea8d5e243abc8975199dd3c7da34d1074d0d",
+                "shasum": ""
+            },
+            "time": "2021-07-15T09:58:26+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "UIkit is a lightweight and modular front-end framework for developing fast and powerful web interfaces.",
+            "homepage": "https://getuikit.com/",
+            "support": {
+                "issues": "https://github.com/uikit/uikit/issues",
+                "source": "https://github.com/uikit/uikit/tree/v3.7.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/uikit",
+                    "type": "github"
+                }
+            ],
+            "install-path": "../uikit/uikit"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

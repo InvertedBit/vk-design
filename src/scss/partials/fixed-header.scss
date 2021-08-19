@@ -1,0 +1,32 @@
+#fixed-header {
+    background-color: rgba(25, 25, 25, 0.8);
+    height: 100px;
+    display: none;
+    
+    &.hidden {
+        top: -100px;
+        animation-name: hideHeader;
+        animation-duration: 0.25s;
+    }
+    &:not(.hidden) {
+        animation-name: showHeader;
+        animation-duration: 0.25s;
+    }
+    
+    @keyframes hideHeader {
+        from {
+            top: 0px;
+        }
+        to {
+            top: -100px;
+        }
+    }
+    @keyframes showHeader {
+        from {
+            top: -100px;
+        }
+        to {
+            top: 0px;
+        }
+    }
+}

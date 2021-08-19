@@ -1,0 +1,33 @@
+
+.header-section {
+    
+    &.header-section {
+        height: 80vh;
+        padding: 0;
+
+        .heading-logo {
+            font-family: $header-title-font-family;
+        }
+    }
+
+    &.header-background {
+        //background-image: url('../../static/img/header01.jpg');
+        background-image: url('../../static/img/DSC018841o.R.JPG');
+        
+        
+        
+    }
+    
+    &.header-video {
+        & > .uk-cover-container {
+            height: 100%;
+        }
+
+        .header-opacity-layer {
+            position: relative;
+            //background-color: #000000;
+            opacity: 1;
+        }
+    }
+
+}

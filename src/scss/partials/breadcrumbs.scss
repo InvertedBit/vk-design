@@ -1,0 +1,14 @@
+.main-section {
+    .uk-breadcrumb.breadcrumb-primary {
+        color: $global-primary-background;
+        & > * > * {
+            color: $colourtheme-1;
+        }
+        & > :nth-child(n+2):not(.uk-first-column)::before {
+            color: $colourtheme-2;
+        }
+        & > :last-child > * {
+            color: $colourtheme-2;
+        }
+    }
+}

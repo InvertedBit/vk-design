@@ -1,0 +1,26 @@
+{
+  "name": "vk-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "_scss": "node-sass --watch src/scss -o static/css",
+    "scss": "node-sass src/scss/main.scss -o static/css",
+    "scss:watch": "npm run scss && node-sass src/scss/main.scss -wo static/css",
+    "watch": "bin/watch.js"
+  },
+  "author": "Alex Scherer <alex.scherer@outlook.com>",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.5.2",
+    "jquery": "^3.6.0",
+    "node-sass": "^6.0.1",
+    "uikit": "^3.7.2",
+    "write": "^2.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.8.0"
+  }
+}
