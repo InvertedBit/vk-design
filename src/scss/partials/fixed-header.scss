@@ -2,6 +2,22 @@
     background-color: rgba(25, 25, 25, 0.8);
     height: 100px;
     display: none;
+    z-index: 1;
+    
+    .heading-logo-link {
+        &:hover > .heading-logo {
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+    
+    .heading-logo {
+        font-family: $header-title-font-family;
+        color: #ffffff;
+    }
+    
+    .navigation-button {
+        color: #ffffff;
+    }
     
     &.hidden {
         top: -100px;

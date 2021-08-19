@@ -1,7 +1,22 @@
 $(function() {
 
-
 var isHeaderShown = false;
+let scrollTop = $(document).scrollTop();
+
+if (scrollTop >= 500) {
+    isHeaderShown = true;
+    if ($('#fixed-header').css('display') == 'none') {
+        $('#fixed-header').css('display', 'block');
+    }
+    if($('#fixed-header').hasClass('hidden')) {
+        $('#fixed-header').removeClass('hidden');
+    }
+} else {
+    if (!$('#fixed-header').hasClass('hidden')) {
+        $('#fixed-header').addClass('hidden');
+    }
+}
+
 
 function showHeader() {
     if (isHeaderShown) {
