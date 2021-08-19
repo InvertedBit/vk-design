@@ -4,9 +4,29 @@
     &.header-section {
         height: 80vh;
         padding: 0;
+        
+        .heading-logo-link {
+            &:hover > .heading-logo {
+                color: rgba(255, 255, 255, 0.8);
+            }
+            .heading-logo {
+                font-family: $header-title-font-family;
+                margin-left: 5vw;
+                margin-top: 5vh;
+            }
 
-        .heading-logo {
-            font-family: $header-title-font-family;
+        }
+
+        
+        .navigation-button {
+            color: #ffffff;
+            margin-right: 10vw;
+            margin-top: 10vh;
+        }
+        
+        .uk-cover-container {
+            height: 100%;
+            background-color: rgba($global-secondary-background, 0.5);
         }
     }
 

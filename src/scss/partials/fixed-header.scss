@@ -3,6 +3,21 @@
     height: 100px;
     display: none;
     
+    .heading-logo-link {
+        &:hover > .heading-logo {
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+    
+    .heading-logo {
+        font-family: $header-title-font-family;
+        color: #ffffff;
+    }
+    
+    .navigation-button {
+        color: #ffffff;
+    }
+    
     &.hidden {
         top: -100px;
         animation-name: hideHeader;
