@@ -9804,7 +9804,12 @@ iframe.uk-cover {
     page-break-after: avoid; } }
 
 .header-section.header-section {
-  height: 80vh;
+  height: 25vh; }
+
+.page-home .header-section.header-section {
+  height: 80vh; }
+
+.header-section.header-section {
   padding: 0; }
   .header-section.header-section .heading-logo-link:hover > .heading-logo {
     color: rgba(255, 255, 255, 0.8); }
@@ -9827,15 +9832,23 @@ iframe.uk-cover {
     height: 100%;
     background-color: rgba(34, 34, 34, 0.5); }
 
-.header-section.header-background {
-  background-image: url("../../static/img/DSC018841o.R.JPG"); }
+.header-section.header-background-slideshow .header-overlay {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-top: calc(80vh * -1);
+  background-color: rgba(34, 34, 34, 0.5); }
+
+.header-section.header-background-slideshow .uk-slideshow-items {
+  height: 100%;
+  min-height: 0 !important; }
 
 .header-section.header-video > .uk-cover-container {
   height: 100%; }
 
 .header-section.header-video .header-opacity-layer {
   position: relative;
-  opacity: 1; }
+  background-color: rgba(34, 34, 34, 0.8); }
 
 #fixed-header {
   background-color: rgba(25, 25, 25, 0.8);
@@ -9893,9 +9906,6 @@ iframe.uk-cover {
     color: #13A80A; }
     .footer-grid a.footer-link:hover, .footer-grid a.footer-link:active {
       color: #0A6106; }
-
-.page-gallery .header-section.header-background {
-  height: 40vh; }
 
 .page-gallery .uk-card {
   z-index: 100; }
