@@ -9810,12 +9810,19 @@ iframe.uk-cover {
     color: rgba(255, 255, 255, 0.8); }
   .header-section.header-section .heading-logo-link .heading-logo {
     font-family: "Lobster", cursive;
-    margin-left: 5vw;
-    margin-top: 5vh; }
+    left: 5vw;
+    top: 5vh;
+    display: inline;
+    position: relative; }
   .header-section.header-section .navigation-button {
     color: #ffffff;
     margin-right: 10vw;
-    margin-top: 10vh; }
+    margin-top: 6vh; }
+    .header-section.header-section .navigation-button svg rect {
+      stroke: #ffffff;
+      stroke-width: 0.5px; }
+    .header-section.header-section .navigation-button:hover {
+      color: rgba(255, 255, 255, 0.8); }
   .header-section.header-section .uk-cover-container {
     height: 100%;
     background-color: rgba(34, 34, 34, 0.5); }
@@ -9839,7 +9846,10 @@ iframe.uk-cover {
     color: rgba(255, 255, 255, 0.8); }
   #fixed-header .heading-logo {
     font-family: "Lobster", cursive;
-    color: #ffffff; }
+    color: #ffffff;
+    position: relative;
+    display: inline;
+    top: 5px; }
   #fixed-header .navigation-button {
     color: #ffffff; }
   #fixed-header.hidden {

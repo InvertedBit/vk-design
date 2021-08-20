@@ -11,8 +11,10 @@
             }
             .heading-logo {
                 font-family: $header-title-font-family;
-                margin-left: 5vw;
-                margin-top: 5vh;
+                left: 5vw;
+                top: 5vh;
+                display: inline;
+                position: relative;
             }
 
         }
@@ -21,7 +23,16 @@
         .navigation-button {
             color: #ffffff;
             margin-right: 10vw;
-            margin-top: 10vh;
+            margin-top: 6vh;
+            
+            svg rect {
+                stroke: #ffffff;
+                stroke-width: 0.5px;
+            }
+            
+            &:hover {
+                color: rgba(255, 255, 255, 0.8);
+            }
         }
         
         .uk-cover-container {

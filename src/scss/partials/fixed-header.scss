@@ -13,7 +13,11 @@
     .heading-logo {
         font-family: $header-title-font-family;
         color: #ffffff;
+        position: relative;
+        display: inline;
+        top: 5px;
     }
+
     
     .navigation-button {
         color: #ffffff;
