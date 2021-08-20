@@ -15,7 +15,7 @@
 html {
   /* 1 */
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   line-height: 1.5;
   /* 2 */
@@ -278,7 +278,7 @@ h4, .uk-h4 {
   line-height: 1.4; }
 
 h5, .uk-h5 {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.4; }
 
 h6, .uk-h6 {
@@ -898,7 +898,7 @@ a.uk-link-reset,
   text-align: left;
   vertical-align: bottom;
   /* 1 */
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   color: #666; }
 
@@ -1888,7 +1888,7 @@ select.uk-form-width-xsmall {
   box-sizing: border-box;
   padding: 0 30px;
   vertical-align: middle;
-  font-size: 20px;
+  font-size: 16px;
   /* 8 */
   line-height: 40px;
   /* 9 */
@@ -4933,7 +4933,7 @@ ul.uk-nav-sub {
   min-height: 80px;
   padding: 0 15px;
   /* 4 */
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Raleway", sans-serif;
   /* 5 */
   text-decoration: none; }
@@ -6659,7 +6659,7 @@ ul.uk-nav-sub {
   line-height: 1.5; }
 
 .uk-text-default {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5; }
 
 /* Weight modifier
