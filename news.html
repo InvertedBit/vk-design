@@ -2,25 +2,26 @@
 <html>
     <head>
         <title>Design</title>
-        <link rel="stylesheet" type="text/css" href="static/css/main-pink.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/main.css" />
 
         <script src="node_modules/uikit/dist/js/uikit.js"></script>
         <script src="node_modules/uikit/dist/js/uikit-icons.js"></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
         <script src="static/js/main.bundle.js"></script>
 
     </head>
     <body class="page-home">
         <div id="fixed-header" class="fixed-header uk-position-fixed uk-position-center-top uk-width-1-1 hidden">
-            <a href="index.html" class="uk-link-muted uk-position-center-left heading-logo-link"><h1 class="uk-heading-small heading-logo">Valerie Knill</h1></a>
+            <a href="index.html" class="uk-link-muted uk-margin-left heading-logo-link"><h1 class="uk-heading-small heading-logo">Valerie Knill</h1></a>
             <a href="#" class="uk-icon-link uk-position-center-right uk-margin-right navigation-button" data-uk-toggle="target: #main-navigation" data-uk-icon="icon: menu; ratio: 3"></a>
         </div>
         <div id="main-navigation" data-uk-offcanvas="flip: true;mode: push">
             <div class="uk-offcanvas-bar uk-flex uk-flex-column">
                 <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                    <li><a href="index.html" class="uk-icon-link" data-uk-icon="icon: close; ratio: 2" data-uk-toggle="target: #main-navigation"></a></li>
+                    <li><a href="#" class="uk-icon-link" data-uk-icon="icon: close; ratio: 2" data-uk-toggle="target: #main-navigation"></a></li>
                     <li class="uk-nav-divider"></li>
-                    <li class="uk-active"><a href="#">Home</a></li>
-                    <li><a href="news.html">News</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="uk-active"><a href="news.html">News</a></li>
                     <li><a href="about.html">Über mich</a></li>
                     <li><a href="gallery.html">Gallerie</a></li>
                     <li><a href="expositions.html">Ausstellungen</a></li>
@@ -28,22 +29,35 @@
                 </ul>
             </div>
         </div>
-        <div class="uk-section uk-light uk-background-cover uk-background-secondary header-section uk-padding-none uk-background-fixed uk-background-blend-soft-light header-video">
-            <div class="uk-cover-container uk-height-medium uk-margin-none">
-                <video src="static/vid/header_bg.mp4" data-uk-cover=""></video>
-                <!--
-                <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent" width="1920" height="1080" frameborder="0" allowfullscreen uk-cover></iframe>
-                -->
-                <div class="header-opacity-layer uk-height-1-1 uk-width-1-1">
-                    <div class="uk-container">
-                        <div class="uk-cover-container uk-width-fill uk-inline">
-                            <a href="#" class="uk-link-muted"><h1 class="uk-heading-large heading-logo">Valerie Knill</h1></a>
-                            <a href="#" class="uk-icon-link uk-position-right navigation-button" data-uk-toggle="target: #main-navigation" data-uk-icon="icon: menu; ratio: 3"></a>
-                        </div>
+        <div class="uk-section uk-light header-section header-background-slideshow" data-uk-slideshow="min-height: 300; autoplay:true; pause-on-hover: false; animation: push; autoplay-interval: 5000">
+                    <ul class="uk-slideshow-items">
+                        <li>
+                            <img src="static/img/gallery/IMG_7710.JPG" data-uk-cover />
+                        </li>
+                        <li>
+                            <img src="static/img/gallery/IMG_9738.JPG" data-uk-cover />
+                        </li>
+                        <li>
+                            <img src="static/img/gallery/IMG_9742.JPG" data-uk-cover />
+                        </li>
+                    </ul>
+                    <div class="header-overlay">
+                        <a href="index.html" class="uk-link-muted heading-logo-link uk-logo"><h1 class="uk-heading-medium heading-logo">Valerie Knill</h1></a>
+                        
+                        <ul class="uk-slideshow-nav uk-dotnav uk-position-bottom-center uk-margin-bottom"></ul>
+
+                        <a href="#" class="uk-icon-link uk-position-top-right navigation-button" data-uk-toggle="target: #main-navigation" data-uk-icon="icon: menu; ratio: 3"></a>
+
                     </div>
-                </div>
-            </div>
         </div>
+        <!--
+        <div class="uk-section uk-light uk-background-cover uk-background-secondary uk-background-fixed header-section header-background">
+                <div class="uk-cover-container uk-width-fill uk-height-fill uk-inline">
+                    <a href="index.html" class="uk-link-muted heading-logo-link"><h1 class="uk-heading-medium heading-logo">Valerie Knill</h1></a>
+                    <a href="#" class="uk-icon-link uk-position-top-right navigation-button" data-uk-toggle="target: #main-navigation" data-uk-icon="icon: menu; ratio: 3"></a>
+                </div>
+        </div>
+        -->
         <div class="uk-section uk-section-secondary uk-light">
             <div class="uk-container main-section">
                 <h1 class="uk-heading-large introduction-title">Willkommen!</h1>
