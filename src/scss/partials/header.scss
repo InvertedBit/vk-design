@@ -1,6 +1,6 @@
 // variables
 $image-background-overlay-opacity: 0.5;
-$video-background-overlay-opacity: 0.8;
+$video-background-overlay-opacity: 0;
 $header-height-home: 80vh;
 $header-height-global: 25vh;
 
@@ -77,6 +77,14 @@ $header-height-global: 25vh;
     //}
     
     &.header-video {
+        
+        .header-overlay {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            margin-top: 0;
+            background-color: rgba($global-secondary-background, $video-background-overlay-opacity);
+        }
         & > .uk-cover-container {
             height: 100%;
         }
