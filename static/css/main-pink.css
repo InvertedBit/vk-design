@@ -9916,3 +9916,6 @@ iframe.uk-cover {
     margin-bottom: 0; }
   .page-gallery .uk-card img {
     width: 100%; }
+
+.page-project-detail .project-details {
+  margin-top: 4rem; }
