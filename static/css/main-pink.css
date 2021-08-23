@@ -9900,6 +9900,9 @@ iframe.uk-cover {
   .main-section .uk-breadcrumb.breadcrumb-primary > :last-child > * {
     color: #83007a; }
 
+.uk-card.card-clickable {
+  cursor: pointer; }
+
 .footer-grid {
   text-align: center; }
   .footer-grid a.footer-link {
