@@ -9900,6 +9900,9 @@ iframe.uk-cover {
   .main-section .uk-breadcrumb.breadcrumb-primary > :last-child > * {
     color: #83007a; }
 
+.uk-card.card-clickable {
+  cursor: pointer; }
+
 .footer-grid {
   text-align: center; }
   .footer-grid a.footer-link {
@@ -9913,3 +9916,6 @@ iframe.uk-cover {
     margin-bottom: 0; }
   .page-gallery .uk-card img {
     width: 100%; }
+
+.page-project-detail .project-details {
+  margin-top: 4rem; }
