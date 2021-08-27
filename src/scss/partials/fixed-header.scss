@@ -1,30 +1,52 @@
+$fixed-header-height: 100px;
+
 #fixed-header {
     background-color: rgba(25, 25, 25, 0.8);
-    height: 100px;
+    height: $fixed-header-height;
     display: none;
     z-index: 900;
     
     .heading-logo-link {
+        display: block;
+        width: max-content;
         &:hover > .heading-logo {
+            color: rgba(255, 255, 255, 0.8);
+        }
+    
+        .heading-logo, .heading-logo-sub {
+            font-family: $header-title-font-family;
+            color: #ffffff;
+            position: relative;
+            display: block;
+            left: 3vw;
+            margin: 0;
+            width: max-content;
+        }
+        .heading-logo-sub {
+            color: $colourtheme-1;
+            position: relative;
+            left: calc(3vw + 15px);
+            top: 0;
+        }
+
+    }
+    
+    .navigation-button {
+        color: #ffffff;
+        margin-right: 5vw;
+
+        svg rect {
+            stroke: #ffffff;
+            stroke-width: 0.5px;
+        }
+        
+        &:hover {
             color: rgba(255, 255, 255, 0.8);
         }
     }
     
-    .heading-logo {
-        font-family: $header-title-font-family;
-        color: #ffffff;
-        position: relative;
-        display: inline;
-        top: 5px;
-    }
-
-    
-    .navigation-button {
-        color: #ffffff;
-    }
-    
     &.hidden {
-        top: -100px;
+        top: calc(#{$fixed-header-height} * -1);
         animation-name: hideHeader;
         animation-duration: 0.25s;
     }
@@ -38,12 +60,12 @@
             top: 0px;
         }
         to {
-            top: -100px;
+            top: calc(#{$fixed-header-height} * -1);
         }
     }
     @keyframes showHeader {
         from {
-            top: -100px;
+            top: calc(#{$fixed-header-height} * -1);
         }
         to {
             top: 0px;

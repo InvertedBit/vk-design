@@ -1,5 +1,5 @@
 // variables
-$image-background-overlay-opacity: 0.25;
+$image-background-overlay-opacity: 0.5;
 $video-background-overlay-opacity: 0;
 $header-height-home: 80vh;
 $header-height-global: 25vh;
@@ -20,18 +20,25 @@ $header-height-global: 25vh;
         padding: 0;
         
         .heading-logo-link {
+            display: block;
+            width: max-content;
+
             &:hover > .heading-logo {
                 color: rgba(255, 255, 255, 0.8);
             }
-            .heading-logo-sub {
-                color: $global-primary-background;
-            }
             .heading-logo, .heading-logo-sub {
                 font-family: $header-title-font-family;
-                left: 5vw;
+                left: 3vw;
                 top: 5vh;
-                display: inline;
+                display: block;
                 position: relative;
+                width: max-content;
+            }
+            .heading-logo-sub {
+                color: $colourtheme-1;
+                position: relative;
+                left: calc(3vw + 15px);
+                top: 0;
             }
 
         }
@@ -39,7 +46,7 @@ $header-height-global: 25vh;
         
         .navigation-button {
             color: #ffffff;
-            margin-right: 10vw;
+            margin-right: 5vw;
             margin-top: 6vh;
             
             svg rect {
