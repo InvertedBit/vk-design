@@ -1,5 +1,5 @@
 // variables
-$image-background-overlay-opacity: 0.5;
+$image-background-overlay-opacity: 0.25;
 $video-background-overlay-opacity: 0;
 $header-height-home: 80vh;
 $header-height-global: 25vh;
@@ -23,7 +23,10 @@ $header-height-global: 25vh;
             &:hover > .heading-logo {
                 color: rgba(255, 255, 255, 0.8);
             }
-            .heading-logo {
+            .heading-logo-sub {
+                color: $global-primary-background;
+            }
+            .heading-logo, .heading-logo-sub {
                 font-family: $header-title-font-family;
                 left: 5vw;
                 top: 5vh;
