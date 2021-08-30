@@ -22,23 +22,24 @@ $header-height-global: 25vh;
         .heading-logo-link {
             display: block;
             width: max-content;
+            position: relative;
+            left: 3vw;
+            top: 5vh;
 
             &:hover > .heading-logo {
                 color: rgba(255, 255, 255, 0.8);
             }
             .heading-logo, .heading-logo-sub {
                 font-family: $header-title-font-family;
-                left: 3vw;
-                top: 5vh;
                 display: block;
                 position: relative;
                 width: max-content;
+                margin: 0;
+                top: 0;
             }
             .heading-logo-sub {
                 color: $colourtheme-1;
-                position: relative;
-                left: calc(3vw + 15px);
-                top: 0;
+                left: 15px;
             }
 
         }
